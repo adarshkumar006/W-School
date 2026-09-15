@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
       <div className="container">
-
+       
         {/* Mobile Brand */}
         <a className="navbar-brand d-lg-none fw-bold" href="#">
           <span className="text-danger">WSIS</span>

@@ -1,86 +1,74 @@
 import { School } from "../data/schoolData";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className=" text-white py-3" style={{backgroundColor:'navy'}}>
-      <div className="container">
+    <header className="school-header">
+      <div className="container py-4">
         <div className="row align-items-center">
 
-          {/* School Name */}
-          <div className="col-md-5 d-flex align-items-center">
-            
-            {/* Logo ke liye space */}
-            <div>
-             <img src="logo.jpeg" alt="Logo" style={{ width: "100px", height: "100px" }} className="rounded-circle me-5" />
+          {/* LEFT - Logo */}
+          <div className="col-md-2 text-center mb-3 mb-md-0">
+            <div className="logo-box">
+              <img
+                src="/logo.jpeg"
+                alt="School Logo"
+                className="school-logo"
+              />
             </div>
+          </div>
 
-            <div>
-              <h3 className="mb-0 fw-bold">
+          {/* CENTER - School Name */}
+          <div className="col-md-6 text-center text-md-start">
+            <span className="welcome-text">
+              ✨ WELCOME TO
+            </span>
+
+            <h1 className="school-title">
               {School.schoolName}
-              </h3>
+            </h1>
 
-              <small className="text-secondary">
-               <b> Excellence in Education </b>
-              </small>
-             
-            </div>
+            <p className="school-tagline">
+              Shaping Minds • Building Character • Creating Leaders
+            </p>
 
-          </div>
-
-          {/* Location */}
-          <div className="col-md-3 mt-2 mt-md-0">
-            <div className="d-flex align-items-center">
-              <span className="fs-5 text-primary me-2">📍</span>
-
-              <div>
-                <small className="text-secondary d-block">
-                <b>  Location</b>
-                </small>
-
-                <span className="fw-semibold">
-                  Kanpur, Uttar Pradesh
-                </span>
-              </div>
+            <div className="school-badges">
+              <span>🎓 Quality Education</span>
+              <span>⭐ Excellence</span>
             </div>
           </div>
 
-          {/* Phone */}
-          <div className="col-md-2 mt-2 px-1 mt-md-0">
-            <div className="d-flex align-items-center">
-              <span className="fs-3 text-primary me-2">☎</span>
+          {/* RIGHT - CTA */}
+          <div className="col-md-4 mt-4 mt-md-0">
+            <div className="header-card">
 
-              <div>
-                <small className="text-secondary d-block">
-               <b>Call Us</b>
-                </small>
-
-                <span className="fw-semibold">
-                  +91 98765 43210
-                </span>
+              <div className="header-info">
+                <span>📍</span>
+                <div>
+                  <small>OUR CAMPUS</small>
+                  <strong>Kanpur, Uttar Pradesh</strong>
+                </div>
               </div>
-            </div>
-          </div>
 
-          {/* Email */}
-          <div className="col-md-2 mt-2 mt-md-0">
-            <div className="d-flex align-items-center">
-              <span className="fs-3 text-primary me-2">✉</span>
-
-              <div>
-                <small className="text-secondary d-block">
-                <b> Email Us </b>
-                </small>
-
-                <span className="fw-semibold">
-                  info@school.com
-                </span>
+              <div className="header-info">
+                <span>📞</span>
+                <div>
+                  <small>CALL US</small>
+                  <strong>+91 98765 43210</strong>
+                </div>
               </div>
+
+              <Link className="btn btn-outline-warning" to="/admission">
+                🎓 Admission Enquiry
+                <span> →</span>
+              </Link>
+
             </div>
           </div>
 
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
