@@ -12,7 +12,7 @@ const Gallery = () => {
       category: "Management",
     },
     {
-      image: "/director.jpeg",
+      image: "/Director.jpeg",
       name: "Shri J.P. Umrao",
       role: "Director",
       category: "Leadership",
@@ -26,7 +26,7 @@ const Gallery = () => {
     },
 
     {
-      image: "/vicepri.jpeg",
+      image: "/vicePri.jpeg",
       name: "Vice Principal",
       role: "Vice Principal",
       category: "Leadership",
