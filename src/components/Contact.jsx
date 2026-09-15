@@ -88,7 +88,7 @@ const Contact = () => {
               <div className="bg-white rounded-4 shadow-sm p-4 h-100 text-center">
 
                 <div
-                  className="d-inline-flex align-items-center justify-content-center rounded-circle bg-info bg-opacity-10 text-info mb-3"
+                  className="d-inline-flex align-items-center justify-content-center  bg-opacity-10 text-info mb-3"
                   style={{
                     width: "65px",
                     height: "65px",
@@ -96,7 +96,7 @@ const Contact = () => {
                   }}
                 >
                     <img src="/vicePri.jpeg"  height={70} width={70} className="rounded-circle"/>
-                  <i className="bi bi-geo-alt-fill"></i>
+                  <i className="bi bi-geo-alt-fill ms-3"></i>
                 </div>
 
                 <h5 className="fw-bold">
@@ -120,7 +120,7 @@ const Contact = () => {
               <div className="bg-white rounded-4 shadow-sm p-4 h-100 text-center">
 
                 <div
-                  className="d-inline-flex align-items-center justify-content-center rounded-circle bg-info bg-opacity-10 text-info mb-3"
+                  className="d-inline-flex align-items-center justify-content-center  bg-opacity-10 text-info mb-3"
                   style={{
                     width: "65px",
                     height: "65px",
@@ -128,7 +128,7 @@ const Contact = () => {
                   }}
                 >
                     <img src="/vicePri.jpeg"  height={70} width={70} className="rounded-circle"/>
-                  <i className="bi bi-telephone-fill"></i>
+                  <i className="bi bi-telephone-fill ms-3"></i>
                 </div>
 
                 <h5 className="fw-bold">
@@ -152,7 +152,7 @@ const Contact = () => {
               <div className="bg-white rounded-4 shadow-sm p-4 h-100 text-center">
 
                 <div
-                  className="d-inline-flex align-items-center justify-content-center rounded-circle bg-info bg-opacity-10 text-info mb-3"
+                  className="d-inline-flex align-items-center justify-content-center  bg-opacity-10 text-info mb-3"
                   style={{
                     width: "65px",
                     height: "65px",
@@ -160,7 +160,7 @@ const Contact = () => {
                   }}
                 >
                     <img src="/vicePri.jpeg"  height={70} width={70} className="rounded-circle"/>
-                  <i className="bi bi-envelope-fill"></i>
+                  <i className="bi bi-envelope-fill ms-3"></i>
                 </div>
 
                 <h5 className="fw-bold">
@@ -184,7 +184,7 @@ const Contact = () => {
               <div className="bg-white rounded-4 shadow-sm p-4 h-100 text-center">
 
                 <div
-                  className="d-inline-flex align-items-center justify-content-center rounded-circle bg-info bg-opacity-10 text-info mb-3"
+                  className="d-inline-flex align-items-center justify-content-center bg-opacity-10 text-info mb-3"
                   style={{
                     width: "65px",
                     height: "65px",
@@ -192,7 +192,7 @@ const Contact = () => {
                   }}
                 >
                     <img src="/vicePri.jpeg"  height={70} width={70} className="rounded-circle"/>
-                  <i className="bi bi-clock-fill"></i>
+                  <i className="bi bi-clock-fill ms-3"></i>
                 </div>
 
                 <h5 className="fw-bold">
