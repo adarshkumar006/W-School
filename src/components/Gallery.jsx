@@ -6,40 +6,40 @@ const Gallery = () => {
   // ================= STAFF DATA =================
   const staffMembers = [
     {
-      image: "public/manager.jpeg",
+      image: "/manager.jpeg",
       name: "Sikha Kanti",
       role: "School Manager",
       category: "Management",
     },
     {
-      image: "public/director.jpeg",
+      image: "/director.jpeg",
       name: "Shri J.P. Umrao",
       role: "Director",
       category: "Leadership",
     },
 
     {
-      image: "public/principal.jpeg",
+      image: "/principal.jpeg",
       name: "B.B. Katiyar",
       role: "Principal",
       category: "Leadership",
     },
 
     {
-      image: "public/vicepri.jpeg",
+      image: "/vicepri.jpeg",
       name: "Vice Principal",
       role: "Vice Principal",
       category: "Leadership",
     },
 
     {
-      image: "public/staff.jpeg",
+      image: "/staff.jpeg",
       name: "Teaching Staff",
       category: "Staff",
     },
 
     {
-      image: "public/cordinator.jpeg",
+      image: "/cordinator.jpeg",
       name: "Dipti Mishra",
       role: "School Cordinator",
       category: "Cordinator",
@@ -50,31 +50,31 @@ const Gallery = () => {
   // ================= STUDENT IMAGES =================
   const studentImages = [
     {
-      image: "public/award1.jpeg",
+      image: "/award1.jpeg",
       category: "Academics",
     },
     {
-      image: "public/award2.jpeg",
+      image: "/award2.jpeg",
       category: "Activities",
     },
     {
-      image: "public/award3.jpeg",
+      image: "/award3.jpeg",
       category: "Activities",
     },
     {
-      image: "public/award4.jpeg",
+      image: "/award4.jpeg",
       category: "Academics",
     },
     {
-      image: "public/award5.jpeg",
+      image: "/award5.jpeg",
     },
     {
-      image: "public/award6.jpeg",
+      image: "/award6.jpeg",
       title: "Happy Students",
       category: "Campus Life",
     },
     {
-      image: "public/award7.jpeg",
+      image: "/award7.jpeg",
       title: "Creative Learning",
       category: "Activities",
     },
@@ -576,7 +576,7 @@ const Gallery = () => {
             >
               Every student brings their own dreams, talents and
               creativity. Here are some memorable moments from
-              student life at Kingston Public School.
+              student life at Wonderstar Star International School.
             </p>
 
           </div>

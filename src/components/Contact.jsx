@@ -95,7 +95,7 @@ const Contact = () => {
                     fontSize: "27px",
                   }}
                 >
-                    <img src="public/vicepri.jpeg"  height={70} width={70} className="rounded-circle"/>
+                    <img src="/vicepri.jpeg"  height={70} width={70} className="rounded-circle"/>
                   <i className="bi bi-geo-alt-fill"></i>
                 </div>
 
@@ -127,7 +127,7 @@ const Contact = () => {
                     fontSize: "27px",
                   }}
                 >
-                    <img src="public/vicepri.jpeg"  height={70} width={70} className="rounded-circle"/>
+                    <img src="/vicepri.jpeg"  height={70} width={70} className="rounded-circle"/>
                   <i className="bi bi-telephone-fill"></i>
                 </div>
 
@@ -159,7 +159,7 @@ const Contact = () => {
                     fontSize: "27px",
                   }}
                 >
-                    <img src="public/vicepri.jpeg"  height={70} width={70} className="rounded-circle"/>
+                    <img src="/vicepri.jpeg"  height={70} width={70} className="rounded-circle"/>
                   <i className="bi bi-envelope-fill"></i>
                 </div>
 
@@ -191,7 +191,7 @@ const Contact = () => {
                     fontSize: "27px",
                   }}
                 >
-                    <img src="public/vicepri.jpeg"  height={70} width={70} className="rounded-circle"/>
+                    <img src="/vicepri.jpeg"  height={70} width={70} className="rounded-circle"/>
                   <i className="bi bi-clock-fill"></i>
                 </div>
 

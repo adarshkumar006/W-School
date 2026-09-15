@@ -50,7 +50,7 @@ const About = () => {
               <div className="position-relative">
 
                 <img
-                  src="public/award9.jpeg"
+                  src="/award9.jpeg"
                   alt="Students studying"
                   className="img-fluid rounded-4 shadow"
                 />
@@ -431,7 +431,7 @@ const About = () => {
             <div className="col-lg-6 order-1 order-lg-2">
 
               <img
-                src="public/award3.jpeg"
+                src="/award3.jpeg"
                 alt="Students"
                 className="img-fluid rounded-4 shadow"
               />
@@ -474,7 +474,7 @@ const About = () => {
                   <div className="col-md-5">
 
                     <img
-                      src="public/vicePri.jpeg"
+                      src="/vicePri.jpeg"
                       alt="Vice Principal"
                       className="img-fluid w-100"
                       style={{

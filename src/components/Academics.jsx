@@ -142,7 +142,7 @@ const Academics = () => {
               <div className="card border-0 shadow-sm h-100 overflow-hidden">
 
                 <img
-                  src="public/award1.jpeg"
+                  src="/award1.jpeg"
                   alt="Primary Education"
                   className="card-img-top"
                   style={{
@@ -185,7 +185,7 @@ const Academics = () => {
               <div className="card border-0 shadow-sm h-100 overflow-hidden">
 
                 <img
-                  src="public/award3.jpeg"
+                  src="/award3.jpeg"
                   alt="Middle School"
                   className="card-img-top"
                   style={{
@@ -228,7 +228,7 @@ const Academics = () => {
               <div className="card border-0 shadow-sm h-100 overflow-hidden">
 
                 <img
-                  src="public/award5.jpeg"
+                  src="/award5.jpeg"
                   alt="Secondary Education"
                   className="card-img-top"
                   style={{
@@ -399,7 +399,7 @@ const Academics = () => {
             <div className="col-lg-6">
 
               <img
-                src="public/staff.jpeg"
+                src="/staff.jpeg"
                 alt="Teacher"
                 className="img-fluid rounded-4 shadow"
               />
@@ -548,7 +548,7 @@ const Academics = () => {
             </h2>
 
             <p className="lead mx-auto mt-3" style={{ maxWidth: "700px" }}>
-              At Kingston Public School, every lesson is an opportunity
+              At Wonderstar Star Internatonal School, every lesson is an opportunity
               to learn, grow and move one step closer to a brighter future.
             </p>
 

@@ -54,7 +54,7 @@ const Home = () => {
             <div className="carousel-item active">
 
               <img
-                src="public/award4.jpeg"
+                src="/award4.jpeg"
                 className="d-block w-100"
                 alt="School Campus"
                 style={{
@@ -111,7 +111,7 @@ const Home = () => {
             <div className="carousel-item">
 
               <img
-                src="public/award7.jpeg"
+                src="/award7.jpeg"
                 className="d-block w-100"
                 alt="Students Learning"
                 style={{
@@ -155,7 +155,7 @@ const Home = () => {
             <div className="carousel-item">
 
               <img
-                src="public/award9.jpeg"
+                src="/award9.jpeg"
                 className="d-block w-100"
                 alt="Classroom"
                 style={{
@@ -196,7 +196,7 @@ const Home = () => {
             <div className="carousel-item">
 
               <img
-                src="public/award10.jpeg"
+                src="/award10.jpeg"
                 className="d-block w-100"
                 alt="Students"
                 style={{
@@ -425,7 +425,7 @@ const Home = () => {
             <div className="col-lg-5 text-center">
 
               <img
-                src="public/principal.jpeg"
+                src="/principal.jpeg"
                 alt="School Leadership"
                 className="img-fluid rounded-4 shadow"
                 style={{
