@@ -39,11 +39,12 @@ const Navbar = () => {
         {/* Menu */}
         <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}>
           
-          <ul className="navbar-nav mx-auto gap-lg-2">
+          <ul className="navbar-nav mx-auto gap-lg-2" >
 
             <li className="nav-item">
               <a
                 className="nav-link fw-semibold px-3 btn btn-outline-danger"
+                style={{color:'white'}}
                 href="#home"
                 onClick={closeMenu}
               >
@@ -54,6 +55,7 @@ const Navbar = () => {
             <li className="nav-item">
               <a
                 className="nav-link fw-semibold px-3 btn btn-outline-danger"
+               style={{color:'white'}}
                 href="#about"
                 onClick={closeMenu}
               >
@@ -64,6 +66,7 @@ const Navbar = () => {
             <li className="nav-item">
               <a
                 className="nav-link fw-semibold px-3 btn btn-outline-danger"
+                style={{color:'white'}}
                 href="#academics"
                 onClick={closeMenu}
               >
@@ -74,6 +77,7 @@ const Navbar = () => {
             <li className="nav-item">
               <a
                 className="nav-link fw-semibold px-3 btn btn-outline-danger"
+                style={{color:'white'}}
                 href="#admission"
                 onClick={closeMenu}
               >
@@ -84,6 +88,7 @@ const Navbar = () => {
             <li className="nav-item">
               <a
                 className="nav-link fw-semibold px-3 btn btn-outline-danger"
+               style={{color:'white'}}
                 href="#facility"
                 onClick={closeMenu}
               >
@@ -94,6 +99,7 @@ const Navbar = () => {
             <li className="nav-item">
               <a
                 className="nav-link fw-semibold px-3 btn btn-outline-danger"
+                style={{color:'white'}}
                 href="#gallery"
                 onClick={closeMenu}
               >
@@ -104,6 +110,8 @@ const Navbar = () => {
             <li className="nav-item">
               <a
                 className="nav-link fw-semibold px-3 btn btn-outline-danger"
+                style={{color:'white'}}
+                
                 href="#contact"
                 onClick={closeMenu}
               >

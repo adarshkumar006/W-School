@@ -160,7 +160,7 @@ const Admission = () => {
                     <div className="col-12">
                       <button
                         type="submit"
-                        className="btn btn-danger w-100 py-2 fw-semibold rounded-pill"
+                        className="btn btn-primary w-100 py-2 fw-semibold rounded-pill"
                       >
                         Submit Enquiry →
                       </button>
@@ -209,7 +209,7 @@ const Admission = () => {
 
     <a
       href="#contact"
-      className="btn btn-danger rounded-pill px-4 fw-semibold"
+      className="btn btn-primary rounded-pill px-4 fw-semibold"
     >
       Contact Us →
     </a>

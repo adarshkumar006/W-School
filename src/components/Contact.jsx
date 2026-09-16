@@ -195,7 +195,7 @@ const Contact = () => {
                     <div className="col-12">
                       <button
                         type="submit"
-                        className="btn btn-danger rounded-pill px-4 fw-semibold"
+                        className="btn btn-primary rounded-pill px-4 fw-semibold"
                       >
                         Send Message →
                       </button>
