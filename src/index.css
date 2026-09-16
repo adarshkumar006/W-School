@@ -1,7 +1,7 @@
 /* Header */
 
 .school-header {
-  background-color:lightyellow;
+  background-color:rgb(238, 238, 226);
 }
 
 /* Decorative circles */
@@ -60,7 +60,7 @@
 /* Welcome */
 
 .welcome-text {
-  color: #f00f0f;
+  color: #9e0606;
 
   font-size: 14px;
 
