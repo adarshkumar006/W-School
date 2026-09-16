@@ -1,603 +1,208 @@
 import { School } from "../data/schoolData";
+
 const About = () => {
+
+
   return (
     <>
-      {/* ================= ABOUT HERO ================= */}
-      <section
-        className="position-relative text-white d-flex align-items-center"
-        style={{
-          minHeight: "55vh",
-          backgroundImage:
-            "url(https://images.unsplash.com/photo-1562774053-701939374585)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        {/* Overlay */}
-        <div
-          className="position-absolute top-0 start-0 w-100 h-100"
-          style={{ background: "rgba(0, 0, 0, 0.62)" }}
-        ></div>
-
-        <div className="container position-relative text-center">
-          <span className="badge bg-primary px-3 py-2 mb-3">
-            ABOUT OUR SCHOOL
+      {/* ================= HERO ================= */}
+     
+        <div className="container text-center">
+          <span className="badge bg-warning text-dark px-3 py-2 rounded-pill fw-semibold" style={{height:'40px',width:'220px', fontSize:'18px'}}>
+           <b> ABOUT OUR SCHOOL</b>
           </span>
 
-          <h1 className="display-3 fw-bold">
+          <h1 className="display-6 fw-bold mt-3 mb-2">
             Shaping Minds, Building Futures
           </h1>
 
           <p
-            className="lead mx-auto mt-3"
-            style={{ maxWidth: "750px" }}
+            className="lead mx-auto opacity-75"
+            style={{ maxWidth: "680px" }}
           >
-            Discover our vision, values and commitment towards providing
-            quality education and developing confident future leaders.
+            Empowering students with knowledge, confidence, character
+            and creativity for a brighter future.
           </p>
         </div>
-      </section>
-
-
-      {/* ================= INTRODUCTION ================= */}
+    
+      {/* ================= ABOUT ================= */}
       <section className="py-5">
         <div className="container">
-
           <div className="row align-items-center g-5">
 
-            {/* Image */}
-            <div className="col-lg-6">
+            {/* IMAGE */}
+            <div className="col-lg-5">
               <div className="position-relative">
-
                 <img
-                  src="/award9.jpeg"
-                  alt="Students studying"
-                  className="img-fluid rounded-4 shadow"
+                  src="/award3.jpeg"
+                  alt="Students"
+                  className="img-fluid rounded-4 shadow-lg w-100"
+                  style={{
+                    height: "330px",
+                    objectFit: "cover",
+                  }}
                 />
 
                 <div
-                  className="position-absolute bottom-0 start-0 bg-primary text-white p-3 p-md-4 rounded-4 shadow"
-                  style={{ margin: "0 0 20px 20px" }}
+                  className="position-absolute bottom-0 start-0 bg-white shadow rounded-4 p-3"
+                  style={{ margin: "0 0 -20px 20px" }}
                 >
-                  <h3 className="fw-bold mb-0">20+</h3>
-                  <small>Years of Excellence</small>
+                  <h3 className="fw-bold text-danger mb-0">20+</h3>
+                  <small className="text-secondary">
+                    Years of Excellence
+                  </small>
                 </div>
-
               </div>
             </div>
 
-
-            {/* Content */}
-            <div className="col-lg-6">
-
-              <span className="text-primary fw-bold">
+            {/* CONTENT */}
+            <div className="col-lg-7">
+              <span className="text-danger fw-bold small">
                 WHO WE ARE
               </span>
 
               <h2 className="display-6 fw-bold mt-2">
-                A Place Where Every Child Can Thrive
+                Education With Purpose
               </h2>
 
-              <p className="text-secondary mt-4">
-                {School.schoolName} is committed to creating a
-                positive and inspiring environment where students can
-                learn, explore and develop their unique abilities.
+              <p className="text-secondary mt-3">
+                <strong>{School.schoolName}</strong> is committed to
+                creating a supportive environment where every student
+                can learn, grow and discover their potential.
               </p>
 
               <p className="text-secondary">
-                We believe that education is more than academic
-                achievement. It is about developing character,
-                confidence, creativity, discipline and a strong sense
-                of responsibility.
+                We believe education goes beyond textbooks. Our focus is
+                on academic excellence, confidence, discipline,
+                creativity and character development.
               </p>
 
-              <p className="text-secondary">
-                Through dedicated teachers, modern learning approaches
-                and a wide range of activities, we encourage every
-                student to discover their potential.
-              </p>
-
-              <div className="row mt-4 g-3">
-
-                <div className="col-sm-6">
-                  <div className="d-flex align-items-center">
-                    <span className="fs-3 text-primary me-3">✓</span>
-                    <span className="fw-semibold">
-                      Student Focused
-                    </span>
-                  </div>
-                </div>
-
-                <div className="col-sm-6">
-                  <div className="d-flex align-items-center">
-                    <span className="fs-3 text-primary me-3">✓</span>
-                    <span className="fw-semibold">
-                      Quality Education
-                    </span>
-                  </div>
-                </div>
-
-                <div className="col-sm-6">
-                  <div className="d-flex align-items-center">
-                    <span className="fs-3 text-primary me-3">✓</span>
-                    <span className="fw-semibold">
-                      Safe Environment
-                    </span>
-                  </div>
-                </div>
-
-                <div className="col-sm-6">
-                  <div className="d-flex align-items-center">
-                    <span className="fs-3 text-primary me-3">✓</span>
-                    <span className="fw-semibold">
-                      Holistic Growth
-                    </span>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-
-      {/* ================= MISSION & VISION ================= */}
-      <section className="py-5 bg-light">
-
-        <div className="container">
-
-          <div className="text-center mb-5">
-
-            <span className="text-primary fw-bold">
-              OUR PURPOSE
-            </span>
-
-            <h2 className="fw-bold mt-2">
-              Vision & Mission
-            </h2>
-
-            <p className="text-secondary mx-auto" style={{ maxWidth: "650px" }}>
-              Our educational philosophy is built around academic
-              excellence, character and continuous growth.
-            </p>
-
-          </div>
-
-
-          <div className="row g-4">
-
-            {/* Vision */}
-            <div className="col-lg-6">
-
-              <div className="card border-0 shadow-sm h-100 p-4 p-md-5">
-
-                <div
-                  className="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mb-4"
-                  style={{
-                    width: "65px",
-                    height: "65px",
-                    fontSize: "28px",
-                  }}
-                >
-                  👁
-                </div>
-
-                <h3 className="fw-bold">
-                  Our Vision
-                </h3>
-
-                <p className="text-secondary mt-3 mb-0">
-                  To create responsible, confident and knowledgeable
-                  individuals who are prepared to make a meaningful
-                  contribution to society and the world.
-                </p>
-
-              </div>
-
-            </div>
-
-
-            {/* Mission */}
-            <div className="col-lg-6">
-
-              <div className="card border-0 shadow-sm h-100 p-4 p-md-5">
-
-                <div
-                  className="rounded-circle bg-success text-white d-flex align-items-center justify-content-center mb-4"
-                  style={{
-                    width: "65px",
-                    height: "65px",
-                    fontSize: "28px",
-                  }}
-                >
-                  🎯
-                </div>
-
-                <h3 className="fw-bold">
-                  Our Mission
-                </h3>
-
-                <p className="text-secondary mt-3 mb-0">
-                  To provide an inclusive and engaging learning
-                  environment that develops academic skills, creativity,
-                  leadership, discipline and strong moral values.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* ================= CORE VALUES ================= */}
-      <section className="py-5">
-
-        <div className="container">
-
-          <div className="text-center mb-5">
-
-            <span className="text-primary fw-bold">
-              WHAT WE BELIEVE
-            </span>
-
-            <h2 className="fw-bold mt-2">
-              Our Core Values
-            </h2>
-
-          </div>
-
-
-          <div className="row g-4">
-
-            <div className="col-12 col-md-6 col-lg-3">
-
-              <div className="text-center p-4 h-100">
-
-                <div className="display-5 mb-3">
-                  🤝
-                </div>
-
-                <h5 className="fw-bold">
-                  Respect
-                </h5>
-
-                <p className="text-secondary">
-                  We encourage respect, kindness and understanding
-                  towards everyone.
-                </p>
-
-              </div>
-
-            </div>
-
-
-            <div className="col-12 col-md-6 col-lg-3">
-
-              <div className="text-center p-4 h-100">
-
-                <div className="display-5 mb-3">
-                  ⭐
-                </div>
-
-                <h5 className="fw-bold">
-                  Excellence
-                </h5>
-
-                <p className="text-secondary">
-                  We inspire students to give their best and continuously
-                  improve.
-                </p>
-
-              </div>
-
-            </div>
-
-
-            <div className="col-12 col-md-6 col-lg-3">
-
-              <div className="text-center p-4 h-100">
-
-                <div className="display-5 mb-3">
-                  ❤️
-                </div>
-
-                <h5 className="fw-bold">
-                  Integrity
-                </h5>
-
-                <p className="text-secondary">
-                  Honesty and strong character are at the heart of our
-                  educational values.
-                </p>
-
-              </div>
-
-            </div>
-
-
-            <div className="col-12 col-md-6 col-lg-3">
-
-              <div className="text-center p-4 h-100">
-
-                <div className="display-5 mb-3">
-                  💡
-                </div>
-
-                <h5 className="fw-bold">
-                  Innovation
-                </h5>
-
-                <p className="text-secondary">
-                  We encourage curiosity, creativity and innovative
-                  thinking.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* ================= LEARNING APPROACH ================= */}
-      <section className="py-5 bg-light">
-
-        <div className="container">
-
-          <div className="row align-items-center g-5">
-
-            <div className="col-lg-6 order-2 order-lg-1">
-
-              <span className="text-primary fw-bold">
-                OUR APPROACH
-              </span>
-
-              <h2 className="display-6 fw-bold mt-2">
-                Education That Goes Beyond Books
-              </h2>
-
-              <p className="text-secondary mt-4">
-                Our approach combines classroom learning with practical
-                experiences, creative activities, sports and technology.
-              </p>
-
-
-              {/* Progress Items */}
-
-              <div className="mt-4">
-
-                <div className="d-flex justify-content-between mb-2">
-                  <span className="fw-semibold">
-                    Academic Development
-                  </span>
-                  <span className="text-primary">95%</span>
-                </div>
-
-                <div className="progress mb-4" style={{ height: "8px" }}>
-                  <div
-                    className="progress-bar"
-                    style={{ width: "95%" }}
-                  ></div>
-                </div>
-
-
-                <div className="d-flex justify-content-between mb-2">
-                  <span className="fw-semibold">
-                    Personality Development
-                  </span>
-                  <span className="text-primary">90%</span>
-                </div>
-
-                <div className="progress mb-4" style={{ height: "8px" }}>
-                  <div
-                    className="progress-bar"
-                    style={{ width: "90%" }}
-                  ></div>
-                </div>
-
-
-                <div className="d-flex justify-content-between mb-2">
-                  <span className="fw-semibold">
-                    Sports & Activities
-                  </span>
-                  <span className="text-primary">85%</span>
-                </div>
-
-                <div className="progress" style={{ height: "8px" }}>
-                  <div
-                    className="progress-bar"
-                    style={{ width: "85%" }}
-                  ></div>
-                </div>
-
-              </div>
-
-            </div>
-
-
-            <div className="col-lg-6 order-1 order-lg-2">
-
-              <img
-                src="/award3.jpeg"
-                alt="Students"
-                className="img-fluid rounded-4 shadow"
-              />
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* ================= LEADERSHIP ================= */}
-      <section className="py-5">
-
-        <div className="container">
-
-          <div className="text-center mb-5">
-
-            <span className="text-primary fw-bold">
-              LEADERSHIP
-            </span>
-
-            <h2 className="fw-bold mt-2">
-              Guiding the Next Generation
-            </h2>
-
-          </div>
-
-
-          <div className="row justify-content-center">
-
-            <div className="col-lg-8">
-
-              <div className="card border-0 shadow-sm rounded-4 overflow-hidden">
-
-                <div className="row g-0 align-items-center">
-
-                  <div className="col-md-5">
-
-                    <img
-                      src="/vicePri.jpeg"
-                      alt="Vice Principal"
-                      className="img-fluid w-100"
-                      style={{
-                        height: "350px",
-                        objectFit: "cover",
-                      }}
-                    />
-
-                  </div>
-
-
-                  <div className="col-md-7">
-
-                    <div className="p-4 p-md-5">
-
-                      <span className="text-primary fw-semibold">
-                         VICE PRINCIPAL'S MESSAGE
+              <div className="row g-3 mt-3">
+                {[
+                  "Quality Education",
+                  "Student Focused",
+                  "Safe Environment",
+                  "Holistic Growth",
+                ].map((item) => (
+                  <div className="col-sm-6" key={item}>
+                    <div className="d-flex align-items-center">
+                      <span className="text-danger fs-5 me-2">✓</span>
+                      <span className="fw-semibold small">
+                        {item}
                       </span>
-
-                      <h3 className="fw-bold mt-2">
-                        "Every Child Has the Potential to Shine"
-                      </h3>
-
-                      <p className="text-secondary mt-3">
-                        Our responsibility is to provide every student
-                        with the right guidance, opportunities and
-                        encouragement to discover their strengths and
-                        achieve their dreams.
-                      </p>
-
-                      <h6 className="fw-bold mb-0">
-                       Vice Principal
-                      </h6>
-
-                      <small className="text-secondary">
-                        {School.schoolName}
-                      </small>
-
                     </div>
-
                   </div>
-
-                </div>
-
+                ))}
               </div>
-
             </div>
 
           </div>
-
         </div>
-
       </section>
 
+{/* ================= OUR PURPOSE ================= */}
+<section
+  className="py-5"
+  style={{ background: "#f8f9fa" }}
+>
+  <div className="container">
 
-      {/* ================= STATS ================= */}
-      <section className="py-5 bg-primary text-white">
+    {/* Heading */}
+    <div className="text-center mb-5">
+      <span className="text-danger fw-bold small">
+        OUR PURPOSE
+      </span>
 
-        <div className="container">
+      <h2 className="fw-bold mt-2">
+        What Drives Us Forward
+      </h2>
 
-          <div className="row text-center g-4">
+      <p
+        className="text-secondary mx-auto mb-0"
+        style={{ maxWidth: "650px" }}
+      >
+        Our commitment is to create an environment where every
+        student can learn, grow and achieve their potential.
+      </p>
+    </div>
 
-            <div className="col-6 col-lg-3">
-              <h2 className="display-5 fw-bold">20+</h2>
-              <p className="mb-0">Years of Excellence</p>
-            </div>
+    {/* Cards */}
+    <div className="row g-4">
 
-            <div className="col-6 col-lg-3">
-              <h2 className="display-5 fw-bold">1000+</h2>
-              <p className="mb-0">Students</p>
-            </div>
+      {[
+        {
+          icon: "👁️",
+          title: "Our Vision",
+          text: "To develop confident, responsible and knowledgeable individuals ready to contribute positively to society.",
+        },
+        {
+          icon: "🎯",
+          title: "Our Mission",
+          text: "To provide engaging education that develops skills, creativity, leadership and strong moral values.",
+        },
+        {
+          icon: "⭐",
+          title: "Our Values",
+          text: "We promote respect, integrity, discipline, kindness and excellence in every student.",
+        },
+        {
+          icon: "🚀",
+          title: "Our Goals",
+          text: "To prepare students with the knowledge, confidence and skills needed for a successful future.",
+        },
+      ].map((item) => (
 
-            <div className="col-6 col-lg-3">
-              <h2 className="display-5 fw-bold">50+</h2>
-              <p className="mb-0">Teachers</p>
-            </div>
-
-            <div className="col-6 col-lg-3">
-              <h2 className="display-5 fw-bold">25+</h2>
-              <p className="mb-0">Activities</p>
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* ================= CTA ================= */}
-      <section className="py-5">
-
-        <div className="container">
-
+        <div className="col-12 col-sm-6 col-lg-3" key={item.title}>
           <div
-            className="rounded-4 p-4 p-md-5 text-center text-white"
+            className="card border-0 h-100 rounded-4 p-4 text-center"
             style={{
-              background:
-                "linear-gradient(135deg, #0d6efd, #212529)",
+              transition: "all .35s ease",
+              borderTop: "4px solid #dc3545",
+              boxShadow: "0 5px 20px rgba(0,0,0,.07)",
+              cursor: "pointer",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-10px)";
+              e.currentTarget.style.boxShadow =
+                "0 15px 35px rgba(0,0,0,.15)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.boxShadow =
+                "0 5px 20px rgba(0,0,0,.07)";
             }}
           >
 
-            <h2 className="display-6 fw-bold">
-              Be a Part of Our Journey
-            </h2>
+            {/* Icon */}
+            <div
+              className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+              style={{
+                width: "65px",
+                height: "65px",
+                background: "#fff0f0",
+                fontSize: "28px",
+                transition: "transform .35s ease",
+              }}
+            >
+              {item.icon}
+            </div>
 
-            <p className="lead mx-auto mt-3" style={{ maxWidth: "700px" }}>
-              Discover an environment where students are encouraged to
-              learn, grow and achieve their dreams.
+            <h4 className="fw-bold mb-3">
+              {item.title}
+            </h4>
+
+            <p className="text-secondary small mb-0">
+              {item.text}
             </p>
 
-            <a
-              href="/contact"
-              className="btn btn-light btn-lg px-5 mt-3"
-            >
-              Contact Us
-            </a>
-
           </div>
-
         </div>
 
-      </section>
+      ))}
+
+    </div>
+  </div>
+</section>
     </>
   );
 };

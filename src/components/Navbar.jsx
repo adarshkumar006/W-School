@@ -3,97 +3,131 @@ import { Link } from "react-router-dom";
 import Mode from "./Mode";
 
 const Navbar = () => {
-
-  // Navbar open/close state
   const [isOpen, setIsOpen] = useState(false);
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+    <nav className="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm"
+      style={{ backgroundColor: "#770c0c" }}
+    >
       <div className="container">
-       
-        {/* Mobile Brand */}
-        <a className="navbar-brand d-lg-none fw-bold" href="#">
-          <span className="text-danger">WSIS</span>
+
+        {/* Brand */}
+        <a
+          className="navbar-brand fw-bold d-flex align-items-center"
+          href="#home"
+          onClick={closeMenu}
+        >
+          <span className="text-warning">WSIS</span>
+         
         </a>
 
-        {/* Toggle Button */}
+        {/* Mobile Toggle */}
         <button
-          className="navbar-toggler border border-secondary shadow-none ms-auto"
+          className="navbar-toggler shadow-none"
           type="button"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle navigation"
+          aria-expanded={isOpen}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Navbar Menu */}
-        <div
-          className={`collapse navbar-collapse ${
-            isOpen ? "show" : ""
-          }`}
-        >
+        {/* Menu */}
+        <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}>
+          
+          <ul className="navbar-nav mx-auto gap-lg-2">
 
-          <ul className="navbar-nav mx-auto align-items-lg-center">
-
-            {/* Home */}
             <li className="nav-item">
-              <Link className="nav-link btn btn-outline-warning  fw-semibold px-3" to="/">
+              <a
+                className="nav-link fw-semibold px-3 btn btn-outline-danger"
+                href="#home"
+                onClick={closeMenu}
+              >
                 Home
-              </Link>
+              </a>
             </li>
 
-            {/* About */}
-            <li className="nav-item " >
-              <Link className="nav-link btn btn-outline-warning  fw-semibold px-3" to="/about">
+            <li className="nav-item">
+              <a
+                className="nav-link fw-semibold px-3 btn btn-outline-danger"
+                href="#about"
+                onClick={closeMenu}
+              >
                 About
-              </Link>
+              </a>
             </li>
 
-            {/* Academics */}
             <li className="nav-item">
-              <Link className="nav-link btn btn-outline-warning fw-semibold px-3" to="/academics">
+              <a
+                className="nav-link fw-semibold px-3 btn btn-outline-danger"
+                href="#academics"
+                onClick={closeMenu}
+              >
                 Academics
-              </Link>
+              </a>
             </li>
-            {/* Admission */}
 
             <li className="nav-item">
-              <Link className="nav-link btn btn-outline-warning fw-semibold px-3" to="/admission">
+              <a
+                className="nav-link fw-semibold px-3 btn btn-outline-danger"
+                href="#admission"
+                onClick={closeMenu}
+              >
                 Admission
-              </Link>
+              </a>
             </li>
 
-            {/* Facilities */}
             <li className="nav-item">
-              <Link className="nav-link btn btn-outline-warning fw-semibold px-3" to="/facilities">
+              <a
+                className="nav-link fw-semibold px-3 btn btn-outline-danger"
+                href="#facility"
+                onClick={closeMenu}
+              >
                 Facilities
-              </Link>
+              </a>
             </li>
 
-            {/* Gallery */}
             <li className="nav-item">
-              <Link className="nav-link btn btn-outline-warning fw-semibold px-3" to="/gallery">
+              <a
+                className="nav-link fw-semibold px-3 btn btn-outline-danger"
+                href="#gallery"
+                onClick={closeMenu}
+              >
                 Gallery
-              </Link>
+              </a>
             </li>
 
-            {/* Contact */}
             <li className="nav-item">
-              <Link className="nav-link btn btn-outline-warning fw-semibold px-3" to="/contact">
+              <a
+                className="nav-link fw-semibold px-3 btn btn-outline-danger"
+                href="#contact"
+                onClick={closeMenu}
+              >
                 Contact
-              </Link>
+              </a>
             </li>
 
           </ul>
 
+          {/* Login */}
+          <div className="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+            <Link
+              to="/login"
+              className="btn btn-warning px-4 fw-semibold rounded-pill"
+              onClick={closeMenu}
+            >
+              Login
+            </Link>
+
+            <Mode />
+          </div>
+
         </div>
       </div>
-      <div>
-        <Link to="/login" className="btn btn-primary rounded-2 px-4 fw-semibold py-2 me-1">
-          Login
-        </Link>
-      </div>
-      <Mode/>
     </nav>
   );
 };

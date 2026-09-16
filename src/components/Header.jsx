@@ -1,5 +1,4 @@
 import { School } from "../data/schoolData";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -58,10 +57,10 @@ const Header = () => {
                 </div>
               </div>
 
-              <Link className="btn btn-outline-warning" to="/admission">
+              <a className="btn btn-outline-warning" href="#admission">
                 🎓 Admission Enquiry
                 <span> →</span>
-              </Link>
+              </a>
 
             </div>
           </div>

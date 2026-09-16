@@ -3,7 +3,7 @@ let Login = () => {
     return (
          <div>
              {/* Heading */} 
-             <div className="container text-center bg-secondary text-white p-4 mt-5 rounded-3"> 
+             <div className="container text-center text-danger p-4 mt-5 rounded-3"> 
                 <h3 className="fw-bold text-warning"> {School.schoolName} Login Page </h3>
                  <p className="mb-0"> Please enter your credentials to access the  {School.schoolName} portal. </p> 
                  </div>
@@ -29,7 +29,7 @@ let Login = () => {
         <label className="form-check-label" htmlFor="remember" > Remember me </label>
          </div>
           {/* Login Button */}
-           <button type="submit" className="btn btn-dark w-100" > Login </button>
+           <button type="submit" className="btn btn-primary w-100" > <b>Login</b></button>
             </form>
              <div className="text-center mt-3">
                  <a href="#" className="text-decoration-none"> Forgot Password? </a> 

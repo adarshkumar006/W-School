@@ -60,7 +60,7 @@
 /* Welcome */
 
 .welcome-text {
-  color: #c24911;
+  color: #f00f0f;
 
   font-size: 14px;
 
@@ -80,7 +80,7 @@
 
   letter-spacing: 1px;
 
-  color: rgb(54, 16, 190);
+  color: rgb(170, 3, 3);
 }
 
 /* Tagline */

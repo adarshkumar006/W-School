@@ -1,292 +1,221 @@
 import { School } from "../data/schoolData";
-let Admission = () => {
+
+const Admission = () => {
   return (
-    <div>
+    <>
+     
+        <div className="container text-center">
+          <span className="badge bg-warning text-dark px-4 py-2 rounded-pill"  style={{height:'40px',width:'220px', fontSize:'18px'}}>
+         <b>ADMISSIONS OPEN</b>
+          </span>
 
-      {/* Header */}
-      <div className="container text-center bg-primary text-white p-5 mt-4 rounded-3">
-        <h1 className="fw-bold">
-          Admissions Open
-        </h1>
+          <h1 className="fw-bold mt-3 mb-2">
+            Start Your Child's Journey
+          </h1>
 
-        <p className="lead mb-0">
-          Start your child's journey with {School.schoolName}
-        </p>
-      </div>
+          <p className="mb-0 opacity-75">
+            Join {School.schoolName} and build a brighter future.
+          </p>
+        </div>
+    
 
+      {/* Admission Section */}
+      <section className="py-5 bg-light">
+        <div className="container">
+          <div className="row g-4 align-items-stretch">
 
-      {/* Admission Information */}
-      <div className="container mt-5">
+            {/* Information */}
+            <div className="col-lg-5">
+              <div
+                className="bg-white rounded-4 shadow-sm h-100 p-4"
+                style={{ borderTop: "4px solid #dc3545" }}
+              >
+                <span className="text-danger fw-bold small">
+                  ADMISSION INFORMATION
+                </span>
 
-        <div className="row g-4">
+                <h2 className="fw-bold mt-2">
+                  Join Our School
+                </h2>
 
-          {/* Left Side */}
-          <div className="col-md-5">
-
-            <div className="card shadow h-100">
-              <div className="card-body p-4">
-
-                <h3 className="fw-bold mb-4">
-                  Admission Information
-                </h3>
-
-                <p>
-            {School.schoolName} welcomes students who are
-                  passionate about learning and growing.
+                <p className="text-secondary">
+                  {School.schoolName} provides a supportive environment
+                  where students can learn, grow and achieve their goals.
                 </p>
 
-                <ul className="list-group list-group-flush">
-
-                  <li className="list-group-item">
-                    <strong>Classes:</strong> Nursery to Class XII
-                  </li>
-
-                  <li className="list-group-item">
-                    <strong>Session:</strong> 2026-27
-                  </li>
-
-                  <li className="list-group-item">
-                    <strong>Admission:</strong> Based on availability
-                  </li>
-
-                  <li className="list-group-item">
-                    <strong>School Type:</strong> Co-Educational
-                  </li>
-
-                </ul>
-
-                <div className="alert alert-info mt-4">
-                  <strong>Note:</strong> Please fill in all required
-                  information correctly.
+                <div className="mt-4">
+                  {[
+                    ["Classes", "Nursery to Class XII"],
+                    ["Session", "2026–27"],
+                    ["School Type", "Co-Educational"],
+                    ["Admission", "Subject to availability"],
+                  ].map(([title, value]) => (
+                    <div
+                      key={title}
+                      className="d-flex justify-content-between border-bottom py-3"
+                    >
+                      <span className="fw-semibold">{title}</span>
+                      <span className="text-secondary text-end">
+                        {value}
+                      </span>
+                    </div>
+                  ))}
                 </div>
 
+                <div className="alert alert-danger mt-4 mb-0">
+                  <small>
+                    Please provide correct information in the enquiry form.
+                  </small>
+                </div>
               </div>
             </div>
 
-          </div>
+            {/* Form */}
+            <div className="col-lg-7">
+              <div className="bg-white rounded-4 shadow-sm p-4 h-100">
+                <span className="text-danger fw-bold small">
+                  ENQUIRY FORM
+                </span>
 
-
-          {/* Right Side - Form */}
-          <div className="col-md-7">
-
-            <div className="card shadow">
-
-              <div className="card-body p-4">
-
-                <h3 className="fw-bold mb-4">
-                  Admission Enquiry Form
-                </h3>
+                <h2 className="fw-bold mt-2 mb-4">
+                  Admission Enquiry
+                </h2>
 
                 <form>
+                  <div className="row g-3">
 
-                  {/* Student Name */}
-                  <div className="mb-3">
-                    <label className="form-label fw-semibold">
-                      Student Name
-                    </label>
+                    <div className="col-md-6">
+                      <label className="form-label fw-semibold">
+                        Student Name
+                      </label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Student's full name"
+                      />
+                    </div>
 
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Enter student's full name"
-                    />
-                  </div>
+                    <div className="col-md-6">
+                      <label className="form-label fw-semibold">
+                        Parent / Guardian
+                      </label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Parent name"
+                      />
+                    </div>
 
-
-                  {/* Parent Name */}
-                  <div className="mb-3">
-                    <label className="form-label fw-semibold">
-                      Parent / Guardian Name
-                    </label>
-
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Enter parent name"
-                    />
-                  </div>
-
-
-                  {/* Email + Phone */}
-                  <div className="row">
-
-                    <div className="col-md-6 mb-3">
+                    <div className="col-md-6">
                       <label className="form-label fw-semibold">
                         Email
                       </label>
-
                       <input
                         type="email"
                         className="form-control"
-                        placeholder="Enter email"
+                        placeholder="Email address"
                       />
                     </div>
 
-                    <div className="col-md-6 mb-3">
+                    <div className="col-md-6">
                       <label className="form-label fw-semibold">
-                        Phone Number
+                        Phone
                       </label>
-
                       <input
                         type="tel"
                         className="form-control"
-                        placeholder="Enter phone number"
+                        placeholder="Phone number"
                       />
                     </div>
 
+                    <div className="col-12">
+                      <label className="form-label fw-semibold">
+                        Applying For
+                      </label>
+
+                      <select className="form-select">
+                        <option value="">Select Class</option>
+                        <option>Nursery</option>
+                        <option>LKG</option>
+                        <option>UKG</option>
+                        <option>Class I - V</option>
+                        <option>Class VI - VIII</option>
+                        <option>Class IX - X</option>
+                        <option>Class XI - XII</option>
+                      </select>
+                    </div>
+
+                    <div className="col-12">
+                      <label className="form-label fw-semibold">
+                        Message
+                      </label>
+
+                      <textarea
+                        className="form-control"
+                        rows="3"
+                        placeholder="Write your enquiry..."
+                      ></textarea>
+                    </div>
+
+                    <div className="col-12">
+                      <button
+                        type="submit"
+                        className="btn btn-danger w-100 py-2 fw-semibold rounded-pill"
+                      >
+                        Submit Enquiry →
+                      </button>
+                    </div>
+
                   </div>
-
-
-                  {/* Class */}
-                  <div className="mb-3">
-                    <label className="form-label fw-semibold">
-                      Applying For Class
-                    </label>
-
-                    <select className="form-select">
-                      <option>Select Class</option>
-                      <option>Nursery</option>
-                      <option>LKG</option>
-                      <option>UKG</option>
-                      <option>Class I</option>
-                      <option>Class II</option>
-                      <option>Class III</option>
-                      <option>Class IV</option>
-                      <option>Class V</option>
-                      <option>Class VI</option>
-                      <option>Class VII</option>
-                      <option>Class VIII</option>
-                      <option>Class IX</option>
-                      <option>Class X</option>
-                      <option>Class XI</option>
-                      <option>Class XII</option>
-                    </select>
-                  </div>
-
-
-                  {/* Message */}
-                  <div className="mb-3">
-                    <label className="form-label fw-semibold">
-                      Message
-                    </label>
-
-                    <textarea
-                      className="form-control"
-                      rows="4"
-                      placeholder="Write your message..."
-                    ></textarea>
-                  </div>
-
-
-                  {/* Submit */}
-                  <button
-                    type="submit"
-                    className="btn btn-primary w-100"
-                  >
-                    Submit Admission Enquiry
-                  </button>
-
                 </form>
-
               </div>
-
             </div>
 
           </div>
-
         </div>
+      </section>
 
-      </div>
+      {/* Bottom CTA */}
+<div className="container my-4">
+  <div
+    className="text-center p-4 rounded-4 shadow-sm mx-auto"
+    style={{
+      maxWidth: "650px",
+      background: "#fff",
+      border: "1px solid #eee",
+      transition: "all 0.3s ease",
+      cursor: "pointer",
+    }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.transform = "translateY(-5px)";
+      e.currentTarget.style.boxShadow =
+        "0 12px 25px rgba(0,0,0,0.12)";
+      e.currentTarget.style.borderColor = "#dc3545";
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.transform = "translateY(0)";
+      e.currentTarget.style.boxShadow =
+        "0 2px 8px rgba(0,0,0,0.08)";
+      e.currentTarget.style.borderColor = "#eee";
+    }}
+  >
+    <h5 className="fw-bold mb-1">
+      Need More Information?
+    </h5>
 
+    <p className="text-secondary mb-3">
+      Our admission team is happy to assist you.
+    </p>
 
-      {/* Admission Process */}
-      <div className="container my-5">
-
-        <h2 className="text-center fw-bold mb-4">
-          Admission Process
-        </h2>
-
-        <div className="row g-4 text-center">
-
-          <div className="col-md-3">
-            <div className="card shadow h-100 p-3">
-              <div className="card-body">
-                <h2>01</h2>
-                <h5 className="fw-bold">Enquiry</h5>
-                <p className="text-muted">
-                  Submit your admission enquiry form.
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-          <div className="col-md-3">
-            <div className="card shadow h-100 p-3">
-              <div className="card-body">
-                <h2>02</h2>
-                <h5 className="fw-bold">Interaction</h5>
-                <p className="text-muted">
-                  Attend the required interaction or assessment.
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-          <div className="col-md-3">
-            <div className="card shadow h-100 p-3">
-              <div className="card-body">
-                <h2>03</h2>
-                <h5 className="fw-bold">Documents</h5>
-                <p className="text-muted">
-                  Submit the required documents.
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-          <div className="col-md-3">
-            <div className="card shadow h-100 p-3">
-              <div className="card-body">
-                <h2>04</h2>
-                <h5 className="fw-bold">Confirmation</h5>
-                <p className="text-muted">
-                  Complete the admission process.
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-
-      {/* CTA */}
-      <div className="container mb-5">
-        <div className="bg-dark text-white text-center p-5 rounded-3">
-
-          <h2 className="fw-bold">
-            Have Questions About Admission?
-          </h2>
-
-          <p className="mb-4">
-            Contact our admission office for more information.
-          </p>
-
-          <a
-            href="/contact"
-            className="btn btn-warning px-4"
-          >
-            Contact Us
-          </a>
-
-        </div>
-      </div>
-
-    </div>
+    <a
+      href="#contact"
+      className="btn btn-danger rounded-pill px-4 fw-semibold"
+    >
+      Contact Us →
+    </a>
+  </div>
+</div>     
+    </>
   );
 };
 
