@@ -11,7 +11,7 @@ import Admission from "./components/Admission";
 import Facility from "./components/Facility";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
-import WhatsApp from "./components/Whatsapp";
+import WhatsApp from "./components/WhatsApp";
 import Phone from "./components/Phone"
 const MainWebsite = () => {
   return (
