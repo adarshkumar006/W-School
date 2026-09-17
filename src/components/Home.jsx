@@ -49,7 +49,7 @@ const Home = () => {
           id="schoolCarousel"
           className="carousel slide carousel-fade"
           data-bs-ride="carousel"
-          data-bs-interval="4000"
+          data-bs-interval="3000"
         >
           <div className="carousel-indicators">
             {slides.map((_, index) => (
