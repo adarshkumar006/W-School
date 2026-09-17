@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
 import { School } from "../data/schoolData";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white pt-5 pb-3 mt-5">
-
+    <footer
+      className="text-dark pt-5 pb-3 mt-5"
+      style={{ backgroundColor: "#f5f4f4" }}
+    >
       <div className="container">
 
         <div className="row g-4">
@@ -15,26 +16,39 @@ const Footer = () => {
               {School.schoolName}
             </h4>
 
-            <p className="text-secondary">
+            <p className="text-success fw-semibold mb-2">
               Excellence in Education
             </p>
 
-            <p className="text-light">
+            <p className="text-dark opacity-75">
               We are committed to providing quality education,
               developing strong values and creating a bright future
               for every student.
             </p>
 
-            <div className="d-flex gap-3 fs-4">
-              <a href="#" className="text-white">
+            {/* Social Icons */}
+            <div className="d-flex gap-3 fs-4 mt-3">
+              <a
+                href="#"
+                className="text-dark"
+                aria-label="Facebook"
+              >
                 <i className="bi bi-facebook"></i>
               </a>
 
-              <a href="#" className="text-white">
+              <a
+                href="#"
+                className="text-dark"
+                aria-label="Instagram"
+              >
                 <i className="bi bi-instagram"></i>
               </a>
 
-              <a href="#" className="text-white">
+              <a
+                href="#"
+                className="text-dark"
+                aria-label="YouTube"
+              >
                 <i className="bi bi-youtube"></i>
               </a>
             </div>
@@ -42,62 +56,95 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="col-6 col-md-3 col-lg-2">
-            <h5 className="fw-bold mb-3">Quick Links</h5>
+            <h5 className="fw-bold mb-3">
+              Quick Links
+            </h5>
 
             <ul className="list-unstyled">
+
               <li className="mb-2">
-                <Link to="/" className="text-secondary text-decoration-none">
+                <a
+                  href="#home"
+                  className="text-dark text-decoration-none opacity-75"
+                >
                   Home
-                </Link>
+                </a>
               </li>
 
               <li className="mb-2">
-                <Link to="/about" className="text-secondary text-decoration-none">
+                <a
+                  href="#about"
+                  className="text-dark text-decoration-none opacity-75"
+                >
                   About
-                </Link>
+                </a>
               </li>
 
               <li className="mb-2">
-                <Link to="/academics" className="text-secondary text-decoration-none">
+                <a
+                  href="#academics"
+                  className="text-dark text-decoration-none opacity-75"
+                >
                   Academics
-                </Link>
+                </a>
               </li>
 
               <li className="mb-2">
-                <Link to="/facility" className="text-secondary text-decoration-none">
-                  Facility
-                </Link>
+                <a
+                  href="#admission"
+                  className="text-dark text-decoration-none opacity-75"
+                >
+                  Admission
+                </a>
               </li>
 
               <li className="mb-2">
-                <Link to="/gallery" className="text-secondary text-decoration-none">
+                <a
+                  href="#facility"
+                  className="text-dark text-decoration-none opacity-75"
+                >
+                  Facilities
+                </a>
+              </li>
+
+              <li className="mb-2">
+                <a
+                  href="#gallery"
+                  className="text-dark text-decoration-none opacity-75"
+                >
                   Gallery
-                </Link>
+                </a>
               </li>
 
               <li>
-                <Link to="/contact" className="text-secondary text-decoration-none">
+                <a
+                  href="#contact"
+                  className="text-dark text-decoration-none opacity-75"
+                >
                   Contact
-                </Link>
+                </a>
               </li>
+
             </ul>
           </div>
 
           {/* Contact */}
           <div className="col-12 col-md-6 col-lg-3">
-            <h5 className="fw-bold mb-3">Contact Us</h5>
+            <h5 className="fw-bold mb-3">
+              Contact Us
+            </h5>
 
-            <p className="text-secondary mb-3">
+            <p className="text-dark opacity-75 mb-3">
               <i className="bi bi-geo-alt-fill text-warning me-2"></i>
               Kanpur, Uttar Pradesh, India
             </p>
 
-            <p className="text-secondary mb-3">
+            <p className="text-dark opacity-75 mb-3">
               <i className="bi bi-telephone-fill text-warning me-2"></i>
               +91 XXXXX XXXXX
             </p>
 
-            <p className="text-secondary mb-3">
+            <p className="text-dark opacity-75 mb-3">
               <i className="bi bi-envelope-fill text-warning me-2"></i>
               info@wonderstarinternationalschool.com
             </p>
@@ -105,49 +152,58 @@ const Footer = () => {
 
           {/* School Timing */}
           <div className="col-12 col-md-6 col-lg-3">
-            <h5 className="fw-bold mb-3">School Hours</h5>
+            <h5 className="fw-bold mb-3">
+              School Hours
+            </h5>
 
-            <p className="text-secondary mb-2">
+            <p className="text-dark opacity-75 mb-2">
               <i className="bi bi-clock-fill text-warning me-2"></i>
               Monday - Saturday
             </p>
 
-            <p className="text-secondary mb-3">
+            <p className="text-dark opacity-75 mb-3">
               8:00 AM - 3:00 PM
             </p>
 
-            <Link
-              to="/contact"
-              className="btn btn-warning fw-semibold px-4"
+            <a
+              href="#contact"
+              className="btn btn-warning fw-semibold px-4 rounded-pill"
             >
               Contact Us
-            </Link>
+            </a>
           </div>
 
         </div>
 
-        <hr className="border-secondary my-4" />
+        <hr className="border-light opacity-25 my-4" />
 
         {/* Bottom Footer */}
-        <div className="row align-items-center">
+        <div className="row align-items-center g-2">
 
-          <div className="col-md-6 text-center text-md-start">
-            <small className="text-secondary">
+          <div className="col-12 col-md-6 text-center text-md-start">
+            <small className="text-white opacity-75">
               © {new Date().getFullYear()} {School.schoolName}.
               All Rights Reserved.
             </small>
           </div>
 
-          <div className="col-md-6 text-center text-md-end mt-2 mt-md-0">
-            <p className="text-danger">
-             This website is developed by <a href="https://pinweb.in/" target="_blank" >Pinweb PVT. LTD.</a>
-            </p>
+          <div className="col-12 col-md-6 text-center text-md-end">
+            <small className="text-white opacity-75">
+              This website is developed by{" "}
+              <a
+                href="https://pinweb.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-warning fw-semibold text-decoration-none"
+              >
+                Pinweb PVT. LTD.
+              </a>
+            </small>
           </div>
 
         </div>
 
       </div>
-
     </footer>
   );
 };

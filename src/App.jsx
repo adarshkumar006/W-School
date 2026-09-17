@@ -13,6 +13,7 @@ import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import WhatsApp from "./components/WhatsApp";
 import Phone from "./components/Phone"
+import Footer from './components/Footer'
 const MainWebsite = () => {
   return (
     <>
@@ -45,7 +46,7 @@ const MainWebsite = () => {
       <section id="contact">
         <Contact />
       </section>
-
+      <Footer/>
       <Phone/>
       <WhatsApp/>
     </>

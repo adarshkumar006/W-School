@@ -125,7 +125,7 @@ const Navbar = () => {
           <div className="d-flex align-items-center gap-2 mt-3 mt-lg-0">
             <Link
               to="/login"
-              className="btn btn-warning px-4 fw-semibold rounded-pill"
+              className="btn btn-primary px-4 fw-semibold rounded-pill"
               onClick={closeMenu}
             >
               Login
